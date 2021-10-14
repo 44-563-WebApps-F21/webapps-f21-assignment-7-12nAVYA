@@ -16,6 +16,11 @@
 <p align="middle" style="color:blueviolet"><b>"Click on the squares to search for wild life"</b></p>
 <p id="tries" align="middle" style="color:chartreuse"><b>"Number of tries is zero."</b></p>
 <p id="distance" align="middle" style="color:cyan"><b>"Distance is unknown."</b></p>
+
+<div style="text-align:center; width:100%; height:100%;">
+    <button type="button" class="btn btn-primary" onclick="newGame()">New game</button>
+    <br><br>
+	
 <div class="container">    
     <div class="row">
         <div class="col-sm-2"><img id="image-0" src="plant.jpg" height="200px" width="200px" onclick="check(0)"></div>
@@ -96,7 +101,7 @@
             document.getElementById("tries").innerHTML = "Number of tries is 0."
             for(var i=0; i<24; i++){
                 if(ids[i] == ids[animalLocation])
-                    document.getElementById(ids[i]).src = "animal.jpg"
+                    document.getElementById(ids[i]).src = "Animal.jpg"
                 else
                     document.getElementById(ids[i]).src = "plant.jpg"
             }
